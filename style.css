@@ -20,9 +20,18 @@
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 180% 180%;
 	animation: gradient 16s ease infinite;
-	/* height: 100vh; */
 }
 
+.circle {
+  border-radius: 50%;
+}
+/* .circle{
+  border-radius: 25%;
+
+} */
+#nav{
+  height: 100vh;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -36,10 +45,6 @@
 }
 
 
-.circle{
-  border-radius: 25%;
-
-}
 
 span{
   font-family: 'Pacifico', cursive;
@@ -50,3 +55,103 @@ span{
   font-family: 'Tektur', cursive;
   font-weight: bold;
 }
+
+/* .Personal{
+  font-weight: bold;
+  font-style: italic;
+} */
+
+/* Typing Effecte */
+#typing-text::after {
+  content: '|';
+  /* font-size: 1em; */
+  color: #333;
+  animation: blink 0.9s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+/* project section */
+
+
+#projects {
+  padding: 50px 0;
+}
+
+#projects .card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#projects .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#projects .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#projects .card-title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+#projects .btn {
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+#projects .btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+
+/* Skill section */
+
+
+#skills .card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  transition: transform 0.2s;
+}
+
+#skills .card:hover {
+  transform: scale(1.05);
+}
+
+#skills .card-body {
+  color: #ffffff;
+}
+
+#nav {
+  height: 100vh;
+  margin-bottom: 50px; /* Add margin to separate sections */
+}
+
+#projects {
+  margin-top: 50px; /* Add margin to separate sections */
+  margin-bottom: 50px; /* Add margin to separate sections */
+}
+
+#skills {
+  margin-top: 50px; /* Add margin to separate sections */
+}
+
+#footer {
+  margin-top: 50px; /* Adjust the value as needed */
+}
+#About {
+  padding-top: 50px; /* Adjust the value as needed */
+}
+
+
