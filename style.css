@@ -65,7 +65,7 @@ span{
 #typing-text::after {
   content: '|';
   /* font-size: 1em; */
-  color: white;
+  color: #333;
   animation: blink 0.9s infinite;
 }
 
