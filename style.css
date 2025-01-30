@@ -16,6 +16,8 @@
   }
 } */
 
+
+
 .gradient-background {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 180% 180%;
@@ -124,13 +126,14 @@ span{
 
 
 #skills .card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   border: none;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.3s;
 }
 
 #skills .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 #skills .card-body {
@@ -159,5 +162,6 @@ span{
 }
 
 
-
-
+.hover-text:hover {
+  background-color: #575b62!important;  /* Replace with your preferred color */
+}
