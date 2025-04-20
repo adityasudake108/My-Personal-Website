@@ -1,352 +1,247 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <title>My portfolio</title> -->
-  <title>My Personal Website</title>
+  <meta name="description" content="Aditya Sudake - Web Developer Portfolio">
+  <title>Aditya Sudake | Web Developer</title>
 
-  <link rel="stylesheet" href="./style.css">
-
-  <!-- bootstrap -->
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-  <!-- font -->
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <section id="nav" class="gradient-background">
+  <!-- Background Texture Elements -->
+  <div class="tech-background"></div>
+  <div class="grid-pattern"></div>
+  <div class="noise-overlay"></div>
+  <div class="wave-container">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+  
+  <!-- Navbar -->
+  <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#nav" class="nav-link text-white hover-text" aria-current="page">Home</a></li>
-          <!-- <li class="nav-item"><a href="#testimonial" class="nav-link">What I Do?</a></li> -->
-          <li class="nav-item"><a href="#projects" class="nav-link text-white hover-text">Projects</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link text-white hover-text">Skills</a></li>
-          <li class="nav-item"><a href="#About" class="nav-link text-white hover-text">About</a></li>
-          <li class="nav-item"><a href="mailto: adityasudake108@gmail.com" class="nav-link text-white hover-text">Help</a></li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white hover-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Social
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="https://twitter.com/aditya_sudake?t=wfF_wH3jzIokWrpPjKCIYA&s=09">Twitter</a></li>
-              <li><a class="dropdown-item" href="https://instagram.com/aditya.sudake?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">Instagram</a></li>
-              <li><a class="dropdown-item" href="https://www.linkedin.com/in/aditya-sudake-a80b0b243">Linkedin</a></li>
-            </ul>
-          </li> -->
-          <!-- <li class="nav-item"><a href="#footer" class="nav-link">Social</a></li> -->
+      <a class="navbar-brand fw-bold" href="#hero">Aditya Sudake</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="mailto:adityasudake108@gmail.com" class="nav-link">Contact</a></li>
         </ul>
-      </header>
+      </div>
     </div>
+  </nav>
 
-
-    <section>
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="./assets/AREmoji_20230422_192714.jpg" class="d-block mx-lg-auto img-fluid circle" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-text-container">
+          <h1 class="fw-bold mb-4"><span class="highlight">Aditya Sudake</span>,<br>Web Developer</h1>
+          <p class="lead mb-5">Crafting responsive and engaging web experiences</p>
+          <div class="d-flex gap-3">
+            <a href="mailto:adityasudake108@gmail.com" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-outline-light">View My Work</a>
           </div>
-          <div class="col-lg-6">
-            <!-- <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi, I'm <span>Aditya</span>,<br>
-              Web Developer</h1> -->
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><span>Aditya Sudake</span>,<br>
-              I'm Web Developer</h1>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="mailto: adityasudake108@gmail.com"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Just Tap</button></a>
-            </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="profile-image-container">
+            <img src="./assets/ghibilimage.png" class="profile-image" alt="Aditya Sudake" width="350">
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-
-    </section>
-  </section>  
-
-
-
-      <!-- Projects Section -->
-  <section id="projects" class="gradient-background">
-    <div class="container px-4 py-3">
-      <h2 class="pb-2 change text-center mt-0">Projects</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div class="col">
-          <div class="card h-100 text-white bg-dark">
-            <img src="./assets/projects/ottproject.png" class="card-img-top" alt="Project 1">
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Recent work I've created</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <div class="card-img-container">
+              <img src="./assets/projects/ottproject.png" class="card-img-top" alt="OTT Streaming UI/UX Design">
+            </div>
             <div class="card-body">
               <h5 class="card-title">OTT Streaming UI/UX Design</h5>
               <p class="card-text">Designed intuitive UI/UX for an OTT streaming platform, enhancing user engagement and experience.</p>
-              <a href="https://www.figma.com/proto/ev5FpfqimayB1JVfUSyhYw/Projects?page-id=121%3A63&node-id=159-57&viewport=-42%2C-760%2C0.68&t=kbnFwyfDPmk47Wpr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=159%3A57" class="btn btn-outline-light" target="_blank">View Project</a>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://www.figma.com/proto/ev5FpfqimayB1JVfUSyhYw/Projects?page-id=121%3A63&node-id=159-57&viewport=-42%2C-760%2C0.68&t=kbnFwyfDPmk47Wpr-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=159%3A57" class="btn btn-outline-primary" target="_blank">View Project</a>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100 text-white bg-dark">
-            <img src="./assets/projects/gamingproject.png" class="card-img-top" alt="Project 2">
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <div class="card-img-container">
+              <img src="./assets/projects/gamingproject.png" class="card-img-top" alt="Gaming Console UI/UX Design">
+            </div>
             <div class="card-body">
-              <h5 class="card-title">OTT Streaming UI/UX Design</h5>
+              <h5 class="card-title">Gaming Console UI/UX Design</h5>
               <p class="card-text">Created a futuristic UI for a gaming console, focusing on immersive user interaction and customizable settings.</p>
-              <a href="https://www.figma.com/proto/ev5FpfqimayB1JVfUSyhYw/Projects?page-id=76%3A2&node-id=76-3&viewport=-1159%2C97%2C0.56&t=Rt7ROicWCzKcBYtD-1&scaling=contain&content-scaling=fixed" class="btn btn-outline-light" target="_blank">View Project</a>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://www.figma.com/proto/ev5FpfqimayB1JVfUSyhYw/Projects?page-id=76%3A2&node-id=76-3&viewport=-1159%2C97%2C0.56&t=Rt7ROicWCzKcBYtD-1&scaling=contain&content-scaling=fixed" class="btn btn-outline-primary" target="_blank">View Project</a>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100 text-white bg-dark">
-            <img src="./assets/projects/foodproject1.png" class="card-img-top" alt="Project 3">
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <div class="card-img-container">
+              <img src="./assets/projects/foodproject1.png" class="card-img-top" alt="Food Delivery App UI/UX Design">
+            </div>
             <div class="card-body">
               <h5 class="card-title">Food Delivery App UI/UX Design</h5>
               <p class="card-text">Crafted seamless UI/UX for a food delivery app, optimizing ordering process and user interaction.</p>
-              <a href="https://www.figma.com/proto/ev5FpfqimayB1JVfUSyhYw/Projects?page-id=96%3A2&node-id=106-64&viewport=103%2C238%2C0.4&t=5AKReC0Z9uTkZZPG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=106%3A64" class="btn btn-outline-light" target="_blank">View Project</a>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <a href="https://www.figma.com/proto/ev5FpfqimayB1JVfUSyhYw/Projects?page-id=96%3A2&node-id=106-64&viewport=103%2C238%2C0.4&t=5AKReC0Z9uTkZZPG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=106%3A64" class="btn btn-outline-primary" target="_blank">View Project</a>
             </div>
           </div>
         </div>
-        <!-- Add more project cards as needed -->
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="gradient-background">
-    <div class="container py-5">
-      <h2 class="pb-2 change text-center">Skills</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fab fa-html5" style="margin-right: 8px"></i>HTML</h5>
-              <p class="card-text">Proficient in HTML5 for creating structured and semantic web content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fab fa-css3-alt" style="margin-right: 8px"></i>CSS</h5>
-              <p class="card-text">Proficient in CSS3 for styling and responsive design with frameworks like Bootstrap.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fab fa-js-square" style="margin-right: 8px"></i>JavaScript</h5>
-              <p class="card-text">Proficient in JavaScript for dynamic and interactive web applications.</p>
-            </div>
-          </div>
-        </div>
-<!--         <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title">React</h5>
-              <p class="card-text">Familiar with React.js for building component-based user interfaces.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title">Node.js</h5>
-              <p class="card-text">Knowledgeable in Node.js for server-side development and RESTful APIs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title">Git</h5>
-              <p class="card-text">Proficient in Git for version control and collaboration with other developers.</p>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-database" style="margin-right: 8px"></i>SQL</h5>
-              <p class="card-text">Fundamental understanding of SQL for managing and querying relational databases.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-database" style="margin-right: 8px"></i>MongoDB</h5>
-              <p class="card-text">Fundamental understanding of MongoDB for handling NoSQL databases.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-paint-brush" style="margin-right: 8px"></i>UI/UX Design</h5>
-              <p class="card-text">Highly proficient in UI/UX design for creating user-friendly and aesthetically pleasing interfaces.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fab fa-figma" style="margin-right: 8px"> </i>Figma</h5>
-              <p class="card-text">Highly proficient in Figma for designing and prototyping interfaces.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fab fa-java" style="margin-right: 8px"></i>Java</h5>
-              <p class="card-text">Competent in Java for building robust and scalable applications.</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-cogs" style="margin-right: 8px"></i>C/C++</h5>
-              <p class="card-text">Competent in C/C++ for system-level programming and performance-critical applications.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fab fa-python" style="margin-right: 8px"></i>Python</h5>
-              <p class="card-text">Competent in Python for scripting, automation, and data analysis.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fab fa-linux" style="margin-right: 8px"></i>Linux</h5>
-              <p class="card-text">Competent in Linux for system administration and command-line operations.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col">
-          <div class="card h-100 text-center">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fab fa-docker" style="margin-right: 8px"></i>Docker</h5>
-              <p class="card-text">Competent in Docker for containerization and deployment of applications.</p>
-            </div>
-          </div>
-        </div>
-        
-        
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- feature -->
-  <!-- <section id="testimonial">
-    <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 change">What I Do</h2>
-  
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/sky-nature-wallpaper-wallpaper-for-free-about-3850-pfaaxx8g79tsctsd.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/lone-tree-in-a-starry-night-ka6vobl22xnqy71r.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/sky-stars-background-points-a5xrb55esp7tjubz.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-
-  <!-- About -->
-  <section id="About">
-    <div class="p-5 text-center bg-body-tertiary gradient-background">
-      <div class="container py-5">
-        <h1 class="text-body-emphasis">About Me</h1>
-        <p class="col-lg-8 mx-auto lead">
-        <code class="text-color"><span id="typing-text"></span></code> 
-        </p>
-        <a href="mailto:adityasudake108@gmail.com">
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Help</button>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section id="About">
-    <div class="p-5 text-center bg-body-tertiary gradient-background">
-      <div class="container py-5">
-        <h1 class="text-body-emphasis">About Me</h1>
-        <p class="col-lg-8 mx-auto lead">
-          I'm the Software Developer <code>.IT Engr</code> pursuing in TE Sppu.</p>
-        <p class="col-lg-8 mx-auto lead">
-          Hello! <code class="Personal">I'm Aditya</code>, a passionate web designer and frontend developer. I love creating beautiful and functional websites. When I'm not coding, you can find me swimming, cycling, or traveling around the world.</p>
-          <a href = "mailto: adityasudake108@gmail.com"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Help</button></a>
-      </div>
-    </div>
-  </section> -->
-
-
-
-    <!-- section footer-->
-  <section id="footer" class="gradient-background">
+  <section id="skills" class="py-5">
     <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Aditya Sudake. All rights reserved.</span>
-          <!-- <span class="mb-3 mb-md-0 text-body-secondary">© aditya</span> -->
-
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Technologies I work with</p>
+      </div>
+      
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Frontend Skills -->
+        <div class="col">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fas fa-code"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+              <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+              <div class="skill-item"><i class="fab fa-js-square"></i> JavaScript</div>
+            </div>
+          </div>
         </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/aditya_sudake?t=wfF_wH3jzIokWrpPjKCIYA&s=09" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-            </svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="https://instagram.com/aditya.sudake?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-          </svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/aditya-sudake-a80b0b243" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-          </svg></a></li>
-        </ul>
-      </footer>
+        
+        <!-- Backend Skills -->
+        <div class="col">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+              <div class="skill-item"><i class="fas fa-database"></i> MongoDB</div>
+              <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+              <div class="skill-item"><i class="fas fa-cogs"></i> C/C++</div>
+              <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tools & Other Skills -->
+        <div class="col">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fas fa-tools"></i>
+              <h3>Tools & Design</h3>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-item"><i class="fas fa-paint-brush"></i> UI/UX Design</div>
+              <div class="skill-item"><i class="fab fa-figma"></i> Figma</div>
+              <div class="skill-item"><i class="fab fa-linux"></i> Linux</div>
+              <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
   </section>
 
-  <script src="script.js"></script>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="about-image-container">
+            <img src="./assets/myimage.jpg" class="about-image" alt="Aditya Sudake">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-content">
+            <div class="typing-container">
+              <code class="typing-text" id="typing-text"></code>
+            </div>
+            <div class="mt-4">
+              <a href="mailto:adityasudake108@gmail.com" class="btn btn-primary">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-md-0">© 2025 Aditya Sudake. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="social-links">
+            <li><a href="https://twitter.com/aditya_sudake?t=wfF_wH3jzIokWrpPjKCIYA&s=09" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/aditya.sudake?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aditya-sudake-a80b0b243" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/adityasudake108" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a id="back-to-top" href="#" class="btn back-to-top-btn" role="button"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
